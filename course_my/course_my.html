@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- font -->
+    <link rel="stylesheet" href="../font/font.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../common/style/reset.css">
+    <link rel="stylesheet" href="../course_my/style/style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+        <div class="menu-item blue">
+        </div>
+        <div class="menu-item list">
+            <ul>
+                <li>
+                    <a href="../configuration/configuration.html">
+                        <input type="submit" id="config" value="設定">
+                    </a>
+                </li>
+                <li>
+                    <a href="../mypage/mypage.html">
+                        <input type="submit" id="my-page" value="マイページ">
+                    </a>
+                </li>
+                <li>
+                    <a href="../search/search.html">
+                        <input type="submit" id="search" value="コース検索">
+                    </a>
+                </li>
+                <li>共有</li>
+                <li>
+                    <a href="#">
+                        <input type="submit" id="twitter" value="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <input type="submit" id="facebook" value="facebook">
+                    </a>
+                </li>
+                <li>-アプリについて-</li>
+                <li>
+                    <a href="../help/help.html">
+                        <input type="submit" id="help" value="ヘルプ">
+                    </a>
+                </li>
+            </ul>
+            <label>
+                <a href="javascript:history.back()">
+                    <div class="back-arrow"></div>
+                </a>
+            </label>
+        </div>
+    </nav>
+    
+    <div class="header">
+        <section id="page-name">
+            <p>マイコース</p>
+        </section>
+    </div>
+    <div class="cource">
+        <section id="cource-map">
+            <a href="../fee/fee.html">
+                <input type="submit" id="fee" value="料金">
+            </a>
+            <iframe src="../system/DrawMap_my.html" scrolling="yes" frameborder="0" id="google-maps"></iframe>
+        </section>
+    </div>
+    <script src="../course/js/custom.js"></script>
+</body>
+
+</html>

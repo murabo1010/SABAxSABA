@@ -1,0 +1,37 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>コース選択画面</title>
+</head>
+
+<body>
+    <!-- JavaScriptファイル読み込み -->
+    <script src="./js/CourseSelect.js" type="text/javascript"></script>
+    
+    <!-- 戻るボタン -->
+    <input type="button" name="back", value="戻る" onclick="location.href='index.php'" /><br>
+    
+    <!-- コース選択ボタン（コース決定ボタン・コース保存ボタン） -->
+    <form>
+        <input type="button" name="course0" value="course0" onclick="drawMap(0)"/>
+        <input type="button" name="save0" value="save0" onclick="saveMap(0)"/>
+        <br>
+        <input type="button" name="course1" value="course1" onclick="drawMap(1)"/>
+        <input type="button" name="save1" value="save1" onclick="saveMap(1)"/>
+        <br>
+        <input type="button" name="course2" value="course2" onclick="drawMap(2)"/>
+        <input type="button" name="save2" value="save2" onclick="saveMap(2)"/>
+        <br>
+        <input type="button" name="course3" value="course3" onclick="drawMap(3)"/>
+        <input type="button" name="save3" value="save3" onclick="saveMap(3)"/>
+        <br>
+        <input type="button" name="course4" value="course4" onclick="drawMap(4)"/>
+        <input type="button" name="save4" value="save4" onclick="saveMap(4)"/>
+        <br>
+    </form>
+</body>
+
+</html>

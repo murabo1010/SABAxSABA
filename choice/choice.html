@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- font -->
+    <link rel="stylesheet" href="../font/font.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../common/style/reset.css">
+    <link rel="stylesheet" href="../choice/style/choice.css">
+</head>
+
+<body>
+    <script src="../system/js/CourseSelect.js" type="text/javascript"></script>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+        <div class="menu-item blue">
+        </div>
+        <div class="menu-item list">
+            <ul>
+                <li>
+                    <a href="../configuration/configuration.html">
+                        <input type="submit" id="config" value="設定">
+                    </a>
+                </li>
+                <li>
+                    <a href="../mypage/mypage.html">
+                        <input type="submit" id="my-page" value="マイページ">
+                    </a>
+                </li>
+                <li>
+                    <a href="../search/search.html">
+                        <input type="submit" id="search" value="コース検索">
+                    </a>
+                </li>
+                <li>共有</li>
+                <li>
+                    <a href="#">
+                        <input type="submit" id="twitter" value="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <input type="submit" id="facebook" value="facebook">
+                    </a>
+                </li>
+                <li>-アプリについて-</li>
+                <li>
+                    <a href="../help/help.html">
+                        <input type="submit" id="help" value="ヘルプ">
+                    </a>
+                </li>
+            </ul>
+            <label>
+                <a href="../search/search.html">
+                    <div class="back-arrow"></div>
+                </a>
+            </label>
+        </div>
+    </nav>
+
+    <div class="header">
+        <section id="page-name">
+            <p>コース選択</p>
+        </section>
+    </div>
+    <div class="course">
+        <section id="course-card">
+            <form>
+               <!--コース1-->
+                <article class="card" id="first-card">
+                    <p class="plus-minus">
+                        <input type="checkbox" href="#" class="plus-minus-open" id="plus-minus-open1" name="save0" value="save0" onclick="saveMap(0)" />
+                        <label class="plus-minus-open-button" for="plus-minus-open1">
+                        <span class="line line-i"></span>
+                        <span class="line line-ii"></span>
+                    </label>
+                    </p>
+                    <input type="button" name="course0" value="course0" onclick="drawMap(0)" />
+                </article>
+                
+                <!--コース2-->
+                <article class="card" id="second-card">
+                    <p class="plus-minus">
+                        <input type="checkbox" href="#" class="plus-minus-open" name="plus-minus-open" id="plus-minus-open2" name="save1" value="save1" onclick="saveMap(1)"/>
+                        <label class="plus-minus-open-button" for="plus-minus-open2">
+                        <span class="line line-i"></span>
+                        <span class="line line-ii"></span>
+                    </label>
+                    </p>
+                    <input type="button" name="course1" value="course1" onclick="drawMap(1)" />
+                </article>
+
+                <!--コース3-->
+                <article class="card" id="third-card">
+                    <p class="plus-minus">
+                        <input type="checkbox" href="#" class="plus-minus-open" name="plus-minus-open" id="plus-minus-open3" name="save2" value="save2" onclick="saveMap(2)"/>
+                        <label class="plus-minus-open-button" for="plus-minus-open3">
+                        <span class="line line-i"></span>
+                        <span class="line line-ii"></span>
+                    </label>
+                    </p>
+                    <input type="button" name="course2" value="course2" onclick="drawMap(2)" />
+                </article>
+
+                <!--コース4-->
+                <article class="card" id="fourth-card">
+                    <p class="plus-minus">
+                        <input type="checkbox" href="#" class="plus-minus-open" name="plus-minus-open" id="plus-minus-open4" name="save3" value="save3" onclick="saveMap(3)"/>
+                        <label class="plus-minus-open-button" for="plus-minus-open4">
+                        <span class="line line-i"></span>
+                        <span class="line line-ii"></span>
+                    </label>
+                    </p>
+                    <input type="button" name="course3" value="course3" onclick="drawMap(3)" />
+                </article>
+                
+                <!--コース5-->
+                <article class="card" id="fifth-card">
+                    <p class="plus-minus">
+                        <input type="checkbox" href="#" class="plus-minus-open" name="plus-minus-open" id="plus-minus-open5" name="save4" value="save4" onclick="saveMap(4)"/>
+                        <label class="plus-minus-open-button" for="plus-minus-open5">
+                        <span class="line line-i"></span>
+                        <span class="line line-ii"></span>
+                    </label>
+                    </p>
+                    <input type="button" name="course4" value="course4" onclick="drawMap(4)" />
+                </article>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

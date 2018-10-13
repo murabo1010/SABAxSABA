@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- font -->
+    <link rel="stylesheet" href="font/font.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="common/style/reset.css">
+    <link rel="stylesheet" href="index/style/style.css">
+</head>
+
+<body>
+    <section id="log-in">
+        <div class="input-contents">
+            <div class="contents-list">
+                <table class="contents-list-table" align="center">
+                    <!-- icon -->
+                    <tr>
+                        <!--<th>アイコン</th>-->
+                        <!-- th(table header):テーブルの見出し  -->
+                        <td>
+                            <!-- td(table data):テーブル内データ-->
+                            <form action="./filesend.cgi" method="post" enctype="multipart/form-data">
+                                <label>
+                                    <span class="filelabel" title="ファイルを選択">
+                                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                        <div class="imgInput">
+                                            <input type="file" name="file1" id="filesend">
+                                            <img src="img/defo.png" alt="" class="imgView" height="100">
+                                        </div>
+                                    </span>
+                                </label>
+                            </form>
+                        </td>
+                    </tr>
+                    <!-- tr(table row):テーブルの横行 -->
+
+                    <!-- name -->
+                    <tr>
+                        <!--<th>名前</th>-->
+                        <td>
+                            <form>
+                                <input type="text" id="display-name" name="name" minlength="2" minlength="30" value="" placeholder="名前" autocomplete="off" required />
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- age -->
+                    <tr>
+                        <!--<th>年齢</th>-->
+                        <td>
+                            <form>
+                                <div class="select-box" id="display-age" name="age">
+                                    <label>
+                                        <select id="select-age-id" class='select-age' onchange="changeItem(this)">
+                                            <option value="choice">年齢</option>
+                                            <option value="10">10代</option>
+                                            <option value="20">20代</option>
+                                            <option value="30">30代</option>
+                                            <option value="40">40代</option>
+                                            <option value="50">50代</option>
+                                            <option value="60">60代</option>
+                                            <option value="70">70代</option>
+                                            <option value="80">80代</option>
+                                            <option value="90">90代</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- mail adress -->
+                    <tr>
+                        <!--<th>メールアドレス</th>-->
+                        <td>
+                            <form>
+                                <input type="text" id="display-email" name="email" minlength="2" value="" placeholder="メールアドレス" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$" autocomplete="off" required />
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- password -->
+                    <tr>
+                        <!--<th>パスワード</th>-->
+                        <td>
+                            <form>
+                                <input type="password" id="display-pw" name="pw" minlength="2" value="" placeholder="パスワード" autocomplete="off" required />
+                            </form>
+
+                        </td>
+                    </tr>
+
+                    <!-- re; password -->
+                    <tr>
+                        <!--<th>パスワード(再入力)</th>-->
+                        <td>
+                            <form>
+                                <input type="password" id="display-repw" name="repw" minlength="2" value="" placeholder="パスワード(再入力)" autocomplete="off" required />
+                            </form>
+
+                        </td>
+                    </tr>
+
+                    <!-- mail adress -->
+                    <tr>
+                        <td class="button" type="submit">
+                            <a href="https://murabo.org/App_sbsb/login/login.html">次へ</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="img/App-name.png" width="70%" height="70%">
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="index/js/jquery-3.3.1.min.js"></script>
+    <script src="index/js/index.js"></script>
+
+</body>
+
+</html>

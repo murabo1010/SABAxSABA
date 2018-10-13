@@ -1,0 +1,49 @@
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+    background-color: #495768;
+}
+
+body {
+    margin: auto;
+    overflow: hidden;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+ul {
+    overflow: hidden;
+    margin-top: 15vh;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+li{
+    margin: 2vh;
+}
+
+.dialog {
+    text-align: center;
+}
+
+input{
+    -webkit-appearance: none;
+    width: 50%;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    border: 3px solid #000;
+    font-size: 1rem;
+    background: #dfdfdf;
+    color: #3a3a3a;
+    margin-left: 1vh;
+    font-weight: bold;
+}
+

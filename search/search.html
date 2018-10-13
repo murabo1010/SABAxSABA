@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--test-->
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- font -->
+    <link rel="stylesheet" href="../font/font.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../common/style/reset.css">
+    <link rel="stylesheet" href="../search/style/search.css">
+    <!-- formのactionのリンク先を追加 -->
+    <script type="text/javascript">
+        function goMirusaba() {
+            document.getElementById('form').action = "../system/Mirusaba.php";
+        }
+
+        function goKikusaba() {
+            document.getElementById('form').action = "../system/Kikusaba.php";
+        }
+
+        function goIusaba() {
+            document.getElementById('form').action = "../system/Iusaba.php";
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <a href="../configuration/configuration.html">
+                <div class="parent">
+                    <div class="gear">
+                        <div class="center"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                    </div>  
+                </div>
+            </a>
+        </label>
+        <a href="#" class="menu-item blue">
+            <i class="fa fa-anchor"></i>
+        </a>
+
+        <label>
+            <a href="../mypage/mypage.html">
+                <label>
+                    <div class="imgInput">
+                        <img src="../img/defo.png" alt="" class="imgView" height="100">    
+                    </div>
+                </label>
+        </a>
+        </label>
+    </nav>
+
+    <div class="header">
+        <section id="page-name">
+            <p>コース検索</p>
+        </section>
+    </div>
+
+    <form id="form" action="Iusaba.php" method="post" enctype="multipart/form-data">
+        <!-- Main.phpはサーバのディレクトリ指定 -->
+        <div class="date">
+            <day>
+                <input type="text" placeholder="20XX" name="year" id="year">/
+                <input type="text" placeholder="01" name="month" id="month">/
+                <input type="text" placeholder="01" name="day" id="day">
+            </day>
+            <num>
+                <input type="text" placeholder="人数" name="people" id="people">
+            </num>
+        </div>
+
+        <ul>
+            <li>
+                <input type="text" name="start" placeholder="出発地" id="start">
+            </li>
+            <li>出発時間</li>
+            <li>
+                <input type="text" placeholder="時" name="stTimeH">
+                <input type="text" placeholder="分" name="stTimeM">
+            </li>
+            <li>
+                <div class="triangle">
+                </div>
+            </li>
+            <li>
+                <input type="text" name="goal" placeholder="目的地" id="goal">
+            </li>
+            <li>到着時間</li>
+            <li>
+                <input type="text" placeholder="時" name="glTimeH">
+                <input type="text" placeholder="分" name="glTimeM">
+            </li>
+
+            <br><br>
+            <arrow></arrow>
+            <br>
+            <arrow></arrow>
+            <br>
+            <arrow></arrow>
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+            <li id="icon">
+                <label id="see">
+                    <input type="file"   name="pictures[]" value="ミルサバ" onclick="goMirusaba()" accept="image/*" multiple onChange=submit()>
+                </label>
+                
+                <label id="listen">
+                    <input type="file"   name="songs[]"    value="キクサバ" onclick="goKikusaba()" accept="audio/*" multiple onChange=submit()>
+                </label>
+                
+                <label id="say">
+                    <input type="submit" name="saba"       value="イウサバ" onclick="goIusaba()">
+                </label>
+                
+                <br><br>
+                <table>
+                    <td>ミルサバ</td>
+                    <td>キクサバ</td>
+                    <td>イウサバ</td>
+                </table>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
