@@ -131,7 +131,17 @@
     <script src="./js/MakeCourse.js"s type="text/javascript"></script>
 </head>
 
-<body>
+<body style="text-align: center">
+    <!-- ロード表示 -->
+    <div style="width: 100%; height: 100%; background-color: #495768" >
+        <font face="Meiryo UI" color="white" style="font-weight: bold" size="7">
+           <br><br><br>
+            コース作成中...
+            <br><br>
+            <img src="Loading.gif" width="100" alt="少々お待ちください。">
+        </font>
+    </div>
+
     <!-- 移動時間取得用のマップ、経路情報エリア -->
     <div id="map_canvas" style="width: 45vh; height: 30vh"></div>
     <div id="route" style="width: 45vh; height: 30vh;overflow: scroll"></div>

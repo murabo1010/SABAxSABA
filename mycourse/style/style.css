@@ -303,7 +303,6 @@ input[type="text"]:focus {
 
 #page-name p {
     padding-top: 1.8rem;
-    padding-top: 2.5vh;
     font-size: 2rem;
     font-weight: bold;
 }

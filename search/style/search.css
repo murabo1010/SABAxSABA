@@ -1,13 +1,12 @@
 html,
 body {
-    /*overflow: hidden;
-    height: 100%;*/
+    overflow: hidden;
 }
 
 body {
     margin: 0;
-    /*overflow: hidden;
-    height: 100%;*/
+    overflow: hidden;
+    height: 100%;
 }
 
 .menu-open-button {
@@ -137,7 +136,7 @@ body {
 }
 
 #page-name p {
-    padding-top: 1.8rem;
+    /*padding-top: 1.8rem;*/
     padding-top: 2.5vh;
     font-size: 2rem;
     font-weight: bold;
@@ -277,13 +276,12 @@ li table{
 li table td{
     width: 20vh;
     text-align: center;
-    font-size: 1rem;
 }
 li table td:nth-of-type(1){
-    padding-left: -1vh;
+    padding-left: 0vh;
 }
 li table td:nth-of-type(2) {
-    padding-left: 1vh;
+    padding-left: 0vh;
 }
 li table td:nth-of-type(3) {
     padding-left: 0vh;
@@ -297,7 +295,6 @@ input[type="submit"]{
 
 #icon{
     width: 100vw;
-    height: 20vh;
 }
 
 label input{

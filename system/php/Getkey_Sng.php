@@ -64,8 +64,8 @@ function Kikusaba( $file_path ){
 
         //$arrayへ格納
         for($j=0; $j<$array_json["resultCount"]; $j++){
-            //echo $array_json["results"][$j]["artistName"].":";
-            //echo $array_json["results"][$j]["primaryGenreName"]."<br>";
+            echo $array_json["results"][$j]["artistName"].":";
+            echo $array_json["results"][$j]["primaryGenreName"]."<br>";
             $genre = $array_json["results"][$j]["primaryGenreName"];
             $keyword = GetWordByGenre( $genre );
             foreach( $keyword as $a => $b){
@@ -80,7 +80,7 @@ function Kikusaba( $file_path ){
             //PrintArray( $keyword );
             //echo "<br>";
         }
-        //echo "<br>";
+        echo "<br>";
     }
 
     //PrintArray( $array );
