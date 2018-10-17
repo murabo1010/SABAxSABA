@@ -23,7 +23,7 @@ function Mirusaba( $file_path ){
         //echo "『".$file_path[$i]."』<br>";
 
         // APIキー
-        $api_key = 'AIzaSyAdMW7I11n8XkWf_TOyhII1de0-MzZ-srI';
+        $api_key = '**************************';
 
         // 画像へのパス
         $image_path = $file_path[$i];

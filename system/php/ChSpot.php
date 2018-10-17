@@ -79,10 +79,10 @@ function ChoiceSpot( $y, $m, $d, $stt_h, $stt_i, $gol_h, $gol_i, $result ){
 
         // データベースに接続
         $pdo = new PDO(
-            'mysql:dbname=murabo1010_spots;host=mysql709.db.sakura.ne.jp;charset=utf8mb4',
+            'mysql:dbname=**************************;host=**************************;charset=utf8mb4',
                 // dbname:データベース名、host:ホスト名、charset:文字セット
-            'murabo1010',   // ユーザ名
-            'haj1me10',     // パスワード
+            '**************************',   // ユーザ名
+            '**************************',     // パスワード
             [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,        // SQL実行でエラーが起こった場合 => 例外をスロー
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,   // フェッチスタイル => カラム名をキーとする連想配列で取得

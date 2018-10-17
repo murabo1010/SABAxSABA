@@ -4,9 +4,9 @@ session_start();
 //インクルード
 require_once('twitteroauth.php');
 //Consumer keyの値をTwitterAPI開発者ページでご確認下さい。
-$sConsumerKey = "qrO5kdSpboIB4QVgJAU1GNrjh";
+$sConsumerKey = "**************************";
 //Consumer secretの値を格納
-$sConsumerSecret = "sL0LEdNHDZve8EzURcSjoFB0IpEGkhKYI3qfnMwXL7pY0D5IcZ";
+$sConsumerSecret = "**************************";
 
 //URLパラメータからoauth_verifierを取得
 if(isset($_GET['oauth_verifier']) && $_GET['oauth_verifier'] != ''){

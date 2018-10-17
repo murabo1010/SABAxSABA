@@ -16,9 +16,9 @@ function GetTweet( &$tweets ){
     //インクルード
     require_once('twitteroauth.php');    // カレントディレクトリは/SABAxSABAなので
     //Consumer keyの値をTwitterAPI開発者ページでご確認下さい。
-    $sConsumerKey = "qrO5kdSpboIB4QVgJAU1GNrjh";
+    $sConsumerKey = "**************************";
     //Consumer secretの値を格納
-    $sConsumerSecret = "sL0LEdNHDZve8EzURcSjoFB0IpEGkhKYI3qfnMwXL7pY0D5IcZ";
+    $sConsumerSecret = "**************************";
     //callbakurl
     // > ドメイン：murabo1010.sakura.ne.jpの場合
     $sCallBackUrl = 'http://murabo1010.sakura.ne.jp/App_sbsb/system/php/twitteroauth/GetTweet_callback.php';
